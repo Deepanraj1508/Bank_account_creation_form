@@ -77,6 +77,22 @@ $(".previous").click(function(){
 	});
 });
 
+$(document).ready(function() {
+    // Example of using the "easeOutCubic" easing function
+    $("div").animate({
+        left: '250px',
+        // opacity: '0.5'
+    }, {
+        duration: 2000,
+        easing: 'easeOutCubic',
+        complete: function() {
+            // Animation complete callback
+            console.log("Animation complete");
+        }
+    });
+});
+
+
 $(".submit").click(function(){
 	return false;
 })
